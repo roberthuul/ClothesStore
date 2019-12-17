@@ -47,7 +47,7 @@ namespace ClothesStore.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Price,Category")] Item item)
+        public ActionResult Create([Bind(Include = "Id,Name,Price,Category, Available Sizes")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -146,5 +146,6 @@ namespace ClothesStore.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }

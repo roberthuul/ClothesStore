@@ -33,18 +33,22 @@
         <dd>
             @Html.DisplayFor(model => model.Category)
         </dd>
+
         <dt>
-            @Html.DisplayNameFor(Model => Mode)
+            @Html.DisplayNameFor(model => model.Sizes)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Category)
+            @Html.DisplayFor(model => model.Sizes)
+
         </dd>
+
 
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+   
+    @Html.ActionLink("Back to List", "Index")|
+    @Html.ActionLink("Add to Cart", "AddToCart", new { id=Model.Id })
 </p>
