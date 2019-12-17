@@ -36,60 +36,9 @@ namespace ClothesStore.Controllers
             return View(shoppingCart);
         }
 
-        // GET: ShoppingCarts/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ShoppingCarts/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Sum,DateCreated,Paid")] ShoppingCart shoppingCart)
-        {
-            if (ModelState.IsValid)
-            {
-                shoppingCart.Id = Guid.NewGuid();
-                db.ShoppingCarts.Add(shoppingCart);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            return View(shoppingCart);
-        }
-
-        // GET: ShoppingCarts/Edit/5
-        public ActionResult Edit(Guid? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            ShoppingCart shoppingCart = db.ShoppingCarts.Find(id);
-            if (shoppingCart == null)
-            {
-                return HttpNotFound();
-            }
-            return View(shoppingCart);
-        }
-
-        // POST: ShoppingCarts/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Sum,DateCreated,Paid")] ShoppingCart shoppingCart)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(shoppingCart).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(shoppingCart);
-        }
+       
+       
+       
 
         // GET: ShoppingCarts/Delete/5
         public ActionResult Delete(Guid? id)
@@ -113,6 +62,16 @@ namespace ClothesStore.Controllers
         {
             ShoppingCart shoppingCart = db.ShoppingCarts.Find(id);
             db.ShoppingCarts.Remove(shoppingCart);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        // Pay
+
+        public ActionResult Pay (Guid id)
+        {
+            ShoppingCart shoppingCart = db.ShoppingCarts.Find(id);
+            shoppingCart.Paid = true;
             db.SaveChanges();
             return RedirectToAction("Index");
         }

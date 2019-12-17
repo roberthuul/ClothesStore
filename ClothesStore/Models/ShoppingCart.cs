@@ -20,6 +20,7 @@ namespace ClothesStore.Models
             DateCreated = DateTime.Now;
             Sum = 0;
             Items = new List<Item>();
+            Paid = false;
         }
 
         public void addToCart(Item item)
