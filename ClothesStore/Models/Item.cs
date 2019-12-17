@@ -29,15 +29,7 @@ namespace ClothesStore.Models
             AvailableSizes.Add("XXL");
         }
 
-        public string DisplaySizes()
-        {
-            string sizes = "";
-            foreach (var item in AvailableSizes)
-            {
-                sizes = sizes + item + " ";
-            }
-            return sizes;
-        }
+ 
     }
 
     public enum Category { Men, Women, Kids }
