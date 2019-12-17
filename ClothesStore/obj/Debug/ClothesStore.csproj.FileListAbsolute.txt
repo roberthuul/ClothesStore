@@ -237,7 +237,6 @@ C:\Users\Laptop\Desktop\kl\ClothesStore\ClothesStore\obj\Debug\ClothesStore.cspr
 C:\Users\Laptop\Desktop\kl\ClothesStore\ClothesStore\obj\Debug\ClothesStore.csproj.CopyComplete
 C:\Users\Laptop\Desktop\kl\ClothesStore\ClothesStore\obj\Debug\ClothesStore.dll
 C:\Users\Laptop\Desktop\kl\ClothesStore\ClothesStore\obj\Debug\ClothesStore.pdb
-<<<<<<< HEAD
 D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\bin\ClothesStore.dll.config
 D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\bin\ClothesStore.dll
 D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\bin\ClothesStore.pdb
@@ -318,7 +317,6 @@ D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\obj\Debug\ClothesStore
 D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\obj\Debug\ClothesStore.csproj.CopyComplete
 D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\obj\Debug\ClothesStore.dll
 D:\Uus kaust (2)\ClothesStore 2\ClothesStore\ClothesStore\obj\Debug\ClothesStore.pdb
-=======
 C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\bin\ClothesStore.dll.config
 C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\bin\ClothesStore.dll
 C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\bin\ClothesStore.pdb
@@ -399,4 +397,7 @@ C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\obj\Debug\ClothesStore.c
 C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\obj\Debug\ClothesStore.csproj.CopyComplete
 C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\obj\Debug\ClothesStore.dll
 C:\Users\Laptop\Desktop\kloon\ClothesStore\ClothesStore\obj\Debug\ClothesStore.pdb
+<<<<<<< HEAD
 >>>>>>> 56719053dd4fcd21b9452241b5bedcd692cc6499
+=======
+>>>>>>> 8483bb1aa6986103a988d0999740135a32c8ba21
