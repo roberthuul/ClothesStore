@@ -15,22 +15,66 @@ namespace ClothesStore.DatabaseContext
             context.Items.AddOrUpdate(x => x.Name,
                 new Item
                 {
-                    Name = "T-särk",
+                    Name = "T-shirt",
                     Price = 19.90,
                     Category = Category.Men
                 },
                 new Item
                 {
-                    Name = "Pluus",
+                    Name = "Blouse",
                     Price = 14.90,
                     Category = Category.Kids
                 },
                 new Item
                 {
-                    Name = "Teksapüksid",
+                    Name = "Jeans",
                     Price = 29.90,
+                    Category = Category.Women
+                },
+                new Item
+                {
+                    Name = "Hat",
+                    Price = 5.50,
+                    Category = Category.Men
+                },
+                new Item
+                {
+                    Name = "Shoes",
+                    Price = 20.10,
+                    Category = Category.Kids
+                },
+                new Item
+                {
+                    Name = "Pajamas",
+                    Price = 23.90,
+                    Category = Category.Kids
+                },
+                new Item
+                {
+                    Name = "Dress",
+                    Price = 32.90,
+                    Category = Category.Women
+                },
+                new Item
+                {
+                    Name = "Jacket",
+                    Price = 40.50,
+                    Category = Category.Men
+                },
+                new Item
+                {
+                    Name = "Scarf",
+                    Price = 3.05,
                     Category = Category.Women
                 });
         }
+
+
+
+
+
+
+               
+        
     }
 }

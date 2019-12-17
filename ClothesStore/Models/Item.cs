@@ -11,6 +11,7 @@ namespace ClothesStore.Models
         public string Name { get; set; }
 
         public List<string> AvailableSizes = new List<string>();
+        public IList<string> Sizes { get { return AvailableSizes; } }
         public double Price { get; set; }
 
         public ICollection<ShoppingCart> ShoppingCarts { get; set; }
@@ -20,11 +21,11 @@ namespace ClothesStore.Models
         public Item()
         {
             Id = Guid.NewGuid();
-            AvailableSizes.Add("XS");
-            AvailableSizes.Add("S");
-            AvailableSizes.Add("M");
-            AvailableSizes.Add("L");
-            AvailableSizes.Add("XL");
+            AvailableSizes.Add("XS|");
+            AvailableSizes.Add("S|");
+            AvailableSizes.Add("M|");
+            AvailableSizes.Add("L|");
+            AvailableSizes.Add("XL|");
             AvailableSizes.Add("XXL");
         }
 
